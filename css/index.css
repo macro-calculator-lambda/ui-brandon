@@ -91,6 +91,11 @@ body {
   background-color: #ccc;
   max-width: 1150px;
 }
+@media (min-width: 1200px) {
+  body {
+    margin: 20px auto;
+  }
+}
 body h2 {
   font-family: 'PT Sans', sans-serif;
   font-weight: 600;
@@ -101,8 +106,18 @@ body header {
   align-items: center;
 }
 body header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Kalam', cursive;
+}
+@media (min-width: 600px) {
+  body header h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  body header h1 {
+    font-size: 3.5rem;
+  }
 }
 body header h2 {
   font-size: 1.2rem;
@@ -116,8 +131,10 @@ body header nav {
   justify-content: space-around;
 }
 @media (min-width: 600px) {
+}
+@media (min-width: 1200px) {
   body header nav {
-    width: 370px;
+    padding: 25px 0;
   }
 }
 body header nav a {
@@ -127,6 +144,17 @@ body header nav a {
   padding: 10px 25px;
   border-radius: 5px;
   border: 1px solid #444;
+}
+@media (min-width: 600px) {
+  body header nav a {
+    margin: 0 20px;
+    padding: 10px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  body header nav a {
+    padding: 10px 70px;
+  }
 }
 body header nav a:hover {
   color: #444;
@@ -161,6 +189,24 @@ body section .tabs h2:hover {
   background-color: #ccc;
   border-bottom: none;
 }
+@media (min-width: 1200px) {
+  body section .info .info-card1 {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  body section .info .info-card2 {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  body section .info .info-card3 {
+    display: flex;
+    align-items: center;
+  }
+}
 body section .info div {
   border: 1px solid #444;
   border-radius: 5px;
@@ -170,6 +216,13 @@ body section .info div {
 }
 body section .info div img {
   width: 100%;
-  margin-top: 20px;
+  margin: 20px auto 0;
   border-radius: 5px;
+  max-width: 600px;
+  max-height: 293px;
+}
+@media (min-width: 1200px) {
+  body section .info div img {
+    margin: 20px;
+  }
 }
