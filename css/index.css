@@ -193,54 +193,54 @@ body article h2 {
     font-size: 1.1rem;
   }
 }
-body section {
+body .info-cards {
   margin: 40px;
   border: 1px solid #444;
   border-radius: 5px;
   background-color: #bbb;
 }
-body section .tabs-links {
+body .info-cards .tabs-links {
   display: flex;
 }
-body section .tabs-links .tabs-link {
+body .info-cards .tabs-links .tabs-link {
   text-align: center;
   background-color: #888;
 }
 @media (min-width: 600px) {
-  body section .tabs-links .tabs-link {
+  body .info-cards .tabs-links .tabs-link {
     padding: 10px 20px;
     margin-left: 2px;
   }
 }
-body section .tabs-links .selected-tab {
+body .info-cards .tabs-links .selected-tab {
   background-color: #bbb;
 }
-body section .tabs-links h2:hover {
+body .info-cards .tabs-links h2:hover {
   background-color: #999;
   border-bottom: none;
 }
 @media (min-width: 1200px) {
-  body section .info p {
+  body .info-cards .info p {
     font-size: 1.2rem;
   }
 }
-body section .info .tabs-item {
+body .info-cards .info .tabs-item {
   display: none;
 }
-body section .info .tabs-item-selected {
+body .info-cards .info .tabs-item-selected {
   display: block;
 }
 @media (min-width: 1200px) {
-  body section .info .tabs-item-selected {
+  body .info-cards .info .tabs-item-selected {
     display: flex;
     align-items: center;
   }
 }
-body section .info div {
+body .info-cards .info div {
   padding: 15px;
   margin-bottom: 20px;
 }
-body section .info div img {
+body .info-cards .info div img {
   width: 100%;
   margin: 20px auto 0;
   border-radius: 5px;
@@ -248,8 +248,64 @@ body section .info div img {
   max-height: 293px;
 }
 @media (min-width: 1200px) {
-  body section .info div img {
+  body .info-cards .info div img {
     margin: 20px;
     border-radius: 20px;
   }
+}
+body .start-btn {
+  text-align: center;
+  margin: 60px;
+}
+body .start-btn button {
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  background-color: #bbb;
+}
+@media (min-width: 1200px) {
+  body .start-btn button {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+}
+body .start-btn button:hover {
+  background-color: #999;
+}
+.about-cards {
+  border-top: 2px dashed #444;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-cards .about-card {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #bbb;
+}
+@media (min-width: 1200px) {
+  .about-cards .about-card {
+    width: 40%;
+  }
+}
+.about-cards .about-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.about-cards .about-card h2 {
+  font-size: 1.2rem;
+}
+.about-cards .about-card h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  margin: 5px 0;
 }

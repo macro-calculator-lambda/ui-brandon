@@ -111,7 +111,7 @@ body {
         }
     }
 
-    section {
+    .info-cards {
         margin: 40px;
         border: 1px solid #444;
         border-radius: 5px;
@@ -178,6 +178,30 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .start-btn {
+        text-align: center;
+        margin: 60px;
+        // border: 1px solid red;
+
+        button {
+            width: 40%;
+            height: 40px;
+            border-radius: 20px;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 600;
+            background-color: #bbb;
+
+            @media @desktop {
+                width: 30%;
+                font-size: 1.1rem;
+            }
+        }
+
+        button:hover {
+            background-color: #999;
         }
     }
 }
