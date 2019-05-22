@@ -42,10 +42,6 @@ body {
             display: flex;
             justify-content: space-around;
 
-            @media @tablet {
-                // justify-content: flex-start;
-            }
-
             @media @desktop {
                 padding: 25px 0;
             }
@@ -79,54 +75,85 @@ body {
             border-radius: 5px;
             margin-bottom: 20px;
         }
+
+        .eggs-cropped {
+            display: none;
+
+            @media @desktop {
+                display: block;
+            }
+        }
+
+        .eggs {
+
+            @media @desktop {
+                display: none;
+            }
+        }
+    }
+
+    article {
+        padding: 30px;
+        border-bottom: 2px dashed @darkg;
+
+        h2 {
+            margin-bottom: 10px;
+
+            @media @desktop {
+                font-size: 1.3rem;
+            }
+        }
+
+        p {
+            @media @desktop {
+                font-size: 1.1rem;
+            }
+        }
     }
 
     section {
-        margin: 20px;
-        border-top: 2px dashed #444;
+        margin: 40px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background-color:  #bbb;
 
-        .tabs {
+        .tabs-links {
             display: flex;
-            margin-top: 30px;
 
-            h2 {
-                // font-size: 1rem;
-                border: 1px solid #444;
-                border-radius: 5px;
+            .tabs-link {
                 text-align: center;
                 background-color: #888;
 
                 @media @tablet {
                     padding: 10px 20px;
-                    margin-right: 10px;
+                    margin-left: 2px;
                 }
             }
 
+            .selected-tab {
+                background-color: #bbb;
+            }
+
             h2:hover {
-                background-color: #ccc;
+                background-color: #999;
                 border-bottom: none;
             }
         }
 
         .info {
 
-            .info-card1 {
-
+            p {
                 @media @desktop {
-                    display: flex;
-                    align-items: center;
+                    font-size: 1.2rem;
                 }
             }
 
-            .info-card2 {
-
-                @media @desktop {
-                    display: flex;
-                    align-items: center;
-                }
+            .tabs-item {
+                display: none;
             }
 
-            .info-card3 {
+            .tabs-item-selected {
+                display: block;
 
                 @media @desktop {
                     display: flex;
@@ -135,11 +162,8 @@ body {
             }
 
             div {
-                border: 1px solid #444;
-                border-radius: 5px;
                 padding: 15px;
                 margin-bottom: 20px;
-                color:  #444;
 
                 img {
                     width: 100%;
@@ -150,6 +174,7 @@ body {
 
                     @media @desktop {
                         margin: 20px;
+                        border-radius: 20px;
                     }
                 }
             }

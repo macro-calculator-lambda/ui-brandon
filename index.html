@@ -6,6 +6,7 @@
     </head>
 
     <body>
+        <script defer="defer" src="./index.js"></script>
 
         <header>
             <h1>Macronutrients Calculator</h1>
@@ -15,25 +16,33 @@
                 <a href="#">About Us</a>
                 <a href="#">Log In</a>
             </nav>
-            <img src="img/eggs-cropped.jpg" alt="Carton of Eggs">
+            <img class="eggs-cropped" src="img/eggs-cropped.jpg" alt="Carton of Eggs">
+            <img class="eggs" src="img/eggs.jpg" alt="Carton of Eggs">
         </header>
+
+        <article>
+            <h2>Our Macro Calculator</h2>
+            <p>Don't be afraid to make these big decisions. Once you start, they sort of just make themselves. You're meant to have fun in life. Decide where your cloud lives. Maybe he lives right in here. Be so very light. Be a gentle whisper. We don't need any guidelines or formats. All we need to do is just let it flow right out of us.</p>
+        </article>
 
         <section>
             <div class="tabs">
-                <h2>What are macro nutrients?</h2>
-                <h2>Why are they important?</h2>
-                <h2>Another question?</h2>
+                <div class="tabs-links">
+                    <h2 class="tabs-link selected-tab" data-tab="1">What are macro nutrients?</h2>
+                    <h2 class="tabs-link" data-tab="2">Why are they important?</h2>
+                    <h2 class="tabs-link" data-tab="3">Another question?</h2>
+                </div>
             </div>
             <div class="info">
-                <div class="info-card1">
+                <div class="tabs-item tabs-item-selected" data-tab="1">
                     <p>We don't have to be committed. We are just playing here. You can create the world you want to see and be a part of. You have that power. Just use the old one inch brush.</p>
                     <img src="img/weight-lift.jpg" alt="Man lifting weights">
                 </div>
-                <div class="info-card2">
+                <div class="tabs-item" data-tab="2">
                     <p>God gave you this gift of imagination. Use it. Talent is a pursued interest. That is to say, anything you practice you can do. Every time you practice, you learn more. You better get your coat out, this is going to be a cold painting. Let's build some happy little clouds up here.</p>
                     <img src="img/salad.jpg" alt="Salad">
                 </div>
-                <div class="info-card3">
+                <div class="tabs-item" data-tab="3">
                     <p>Little trees and bushes grow however makes them happy. Use your imagination, let it go. If you don't like it - change it. It's your world. This is probably the greatest thing that's ever happened in my life. Just make little strokes like that.</p> 
                     <img src="img/eating-sandwich.jpg" alt="Woman eating sandwich">
                 </div>
