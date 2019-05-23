@@ -1,3 +1,29 @@
+@keyframes colorfade {
+  0% {
+    background-color: #bbb;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: #666;
+  }
+}
+@keyframes grow {
+  0% {
+    background-color: #bbb;
+  }
+  50% {
+    background-color: #444;
+    padding: 20px 37px;
+    margin-bottom: 10px;
+  }
+  100% {
+    background-color: #999;
+    padding: 17.5px 32px;
+    margin-bottom: 15px;
+  }
+}
 html,
 body,
 div,
@@ -159,8 +185,9 @@ body header nav a {
   }
 }
 body header nav a:hover {
-  color: #444;
-  background-color: #ccc;
+  background-color: #666;
+  animation: colorfade;
+  animation-duration: 0.75s;
 }
 body header img {
   width: 95%;
@@ -215,12 +242,15 @@ body .info-cards .tabs-links .tabs-link {
   text-align: center;
   font-size: 0.8rem;
   background-color: #888;
+  margin: 1px 0 0 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 @media (min-width: 600px) {
   body .info-cards .tabs-links .tabs-link {
     padding: 10px 20px;
-    margin-left: 2px;
     font-size: 1rem;
+    margin: 2px 0 0 2px;
   }
 }
 body .info-cards .tabs-links .selected-tab {
@@ -228,7 +258,6 @@ body .info-cards .tabs-links .selected-tab {
 }
 body .info-cards .tabs-links h2:hover {
   background-color: #999;
-  border-bottom: none;
 }
 @media (min-width: 1200px) {
   body .info-cards .info p {
@@ -242,11 +271,12 @@ body .info-cards .info .tabs-item {
 body .info-cards .info .tabs-item-selected {
   display: block;
   padding: 15px;
+  height: 357px;
 }
 @media (min-width: 1200px) {
   body .info-cards .info .tabs-item-selected {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -260,6 +290,12 @@ body .info-cards .info .tabs-item-selected h2 {
 }
 body .info-cards .info .tabs-item-selected ul {
   padding: 0 40px;
+  margin-left: 60px;
+}
+@media (min-width: 1200px) {
+  body .info-cards .info .tabs-item-selected ul {
+    margin-left: 80px;
+  }
 }
 @media (min-width: 1200px) {
   body .info-cards .info .tabs-item-selected ul li {
@@ -286,7 +322,7 @@ body .start-btn {
 body .start-btn button {
   width: 40%;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
   font-weight: 600;
   background-color: #bbb;
@@ -300,7 +336,9 @@ body .start-btn button {
   }
 }
 body .start-btn button:hover {
-  background-color: #999;
+  background-color: #666;
+  animation: colorfade;
+  animation-duration: 0.75s;
 }
 body footer {
   background-color: #444;
@@ -356,4 +394,10 @@ body footer p a {
   width: 28px;
   margin: 20px 0 0 10px;
   opacity: 0.5;
+}
+.about-cards .about-card:hover {
+  animation: grow 0.75s;
+  background-color: #999;
+  padding: 17.5px 32px;
+  margin-bottom: 15px;
 }

@@ -70,8 +70,10 @@ body {
             }
 
             a:hover {
-                color: #444;
-                background-color: #ccc;
+                // color: #444;
+                background-color: #666;
+                animation: colorfade;
+                animation-duration: .75s;
             }
         }
 
@@ -133,11 +135,14 @@ body {
                 text-align: center;
                 font-size: .8rem;
                 background-color: #888;
+                margin: 1px 0 0 1px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
 
                 @media @tablet {
                     padding: 10px 20px;
-                    margin-left: 2px;
                     font-size: 1rem;
+                    margin: 2px 0 0 2px;
                 }
             }
 
@@ -147,7 +152,6 @@ body {
 
             h2:hover {
                 background-color: #999;
-                border-bottom: none;
             }
         }
 
@@ -167,10 +171,11 @@ body {
             .tabs-item-selected {
                 display: block;
                 padding: 15px;
+                height: 357px;
 
                 @media @desktop {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     align-items: center;
                 }
 
@@ -184,6 +189,11 @@ body {
 
                 ul {
                     padding: 0 40px;
+                    margin-left: 60px;
+
+                    @media @desktop {
+                        margin-left: 80px;
+                    }
 
                     li {
                         @media @desktop {
@@ -211,12 +221,11 @@ body {
     .start-btn {
         text-align: center;
         margin: 60px;
-        // border: 1px solid red;
 
         button {
             width: 40%;
             height: 40px;
-            border-radius: 20px;
+            border-radius: 10px;
             font-family: 'PT Sans', sans-serif;
             font-weight: 600;
             background-color: #bbb;
@@ -230,7 +239,9 @@ body {
         }
 
         button:hover {
-            background-color: #999;
+            background-color: #666;
+            animation: colorfade;
+            animation-duration: .75s;
         }
     }
 

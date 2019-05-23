@@ -20,7 +20,6 @@ class TabLink {
   class TabItem {
     constructor(element) {
       this.element = element ;
-      console.log(this.element)
     }
   
     select() {
@@ -36,5 +35,3 @@ class TabLink {
   links.forEach(function(link){
     return new TabLink(link)
   })
-
-  console.log(links);
