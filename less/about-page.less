@@ -1,0 +1,52 @@
+.about-cards {
+    border-top: 2px dashed @darkg;
+    padding: 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .about-card {
+        border: 1px solid @darkg;
+        border-radius: 5px;
+        padding: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        background-color:  #bbb;
+
+        @media @desktop {
+            width: 40%;
+        }
+
+        .blank-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .contact {
+            height: 28px;
+            width: 28px;
+            margin: 20px 0 0 10px;
+            opacity: .5;
+        }        
+    }
+
+    .about-card:hover {
+        animation: grow .75s;
+        background-color: #999; 
+        padding: 17.5px 32px; 
+        margin-bottom: 15px;
+    }
+}

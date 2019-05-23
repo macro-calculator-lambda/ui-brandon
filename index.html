@@ -6,39 +6,83 @@
     </head>
 
     <body>
+        <script defer="defer" src="./index.js"></script>
 
         <header>
-            <h1>Macronutrients Calculator</h1>
-            <h2>Welcome to the worlds finest macro calculator!</h2>
+            <div class="title">
+                <h1>Macronutrients Calculator</h1>
+                <h2>Welcome to the worlds finest macro calculator!</h2>
+            </div>
             <nav>
                 <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Log In</a>
+                <a href="about.html">About Us</a>
+                <a href="https://macro-calculator.netlify.com/login">Log In</a>
             </nav>
-            <img src="img/eggs-cropped.jpg" alt="Carton of Eggs">
+            <img class="eggs-cropped" src="img/eggs-cropped.jpg" alt="Carton of Eggs">
+            <img class="eggs" src="img/eggs.jpg" alt="Carton of Eggs">
         </header>
 
-        <section>
+        <article>
+            <h2>Our Macro Calculator</h2>
+            <p>It is hard to track the nutritional value of everything you eat in a day, luckily we have you covered. Our macro calculator can help organize your daily macronutrient intake, whether your goal is to cut back, eat more, or just eat healthier WE CAN HELP!</p>
+        </article>
+
+        <section class="info-cards">
             <div class="tabs">
-                <h2>What are macro nutrients?</h2>
-                <h2>Why are they important?</h2>
-                <h2>Another question?</h2>
+                <div class="tabs-links">
+                    <h2 class="tabs-link selected-tab" data-tab="1">What are macronutrients?</h2>
+                    <h2 class="tabs-link" data-tab="2">Why are they important?</h2>
+                    <h2 class="tabs-link" data-tab="3">Standard range:</h2>
+                    <h2 class="tabs-link" data-tab="4">Low-carb range:</h2>
+                    <h2 class="tabs-link" data-tab="5">Keto range:</h2>
+                </div>
             </div>
             <div class="info">
-                <div class="info-card1">
-                    <p>We don't have to be committed. We are just playing here. You can create the world you want to see and be a part of. You have that power. Just use the old one inch brush.</p>
+                <div class="tabs-item tabs-item-selected" data-tab="1">
+                    <p>A macronutrient is a chemical element or substance (for example: a carbohydrate, fat, or protein) that is essential in relatively large amounts for the growth and health of a living organism</p>
                     <img src="img/weight-lift.jpg" alt="Man lifting weights">
                 </div>
-                <div class="info-card2">
-                    <p>God gave you this gift of imagination. Use it. Talent is a pursued interest. That is to say, anything you practice you can do. Every time you practice, you learn more. You better get your coat out, this is going to be a cold painting. Let's build some happy little clouds up here.</p>
+                <div class="tabs-item" data-tab="2">
+                    <p>The human body and all of its impressive mechanisms are quite complex, meaning that it requires a variety of nutrients in order to function optimally. What we eat is essential for meeting these needs. Macronutrients help us grow, develop, repair, give us energy, and make us feel good. They each have their own role and functions in the body</p>
                     <img src="img/salad.jpg" alt="Salad">
                 </div>
-                <div class="info-card3">
-                    <p>Little trees and bushes grow however makes them happy. Use your imagination, let it go. If you don't like it - change it. It's your world. This is probably the greatest thing that's ever happened in my life. Just make little strokes like that.</p> 
+                <div class="tabs-item" data-tab="3">
+                    <ul>
+                        <h2>Standard Diet</h2>
+                        <li>Protein: 10-35% of calories</li> 
+                        <li>Carbs: 45-65% of calories</li> 
+                        <li>Fat: 20-35% of calories</li> 
+                    </ul>
                     <img src="img/eating-sandwich.jpg" alt="Woman eating sandwich">
+                </div>
+                <div class="tabs-item" data-tab="4">
+                    <ul>
+                        <h2>Low-Carb Diet</h2>
+                        <li>Protein: 20-30% of calories</li> 
+                        <li>Carbs: 30-40% of calories</li> 
+                        <li>Fat: 30-40% of calories</li> 
+                    </ul>
+                    <img src="img/salad2.jpg" alt="Picture of salad">
+                </div>
+                <div class="tabs-item" data-tab="5">
+                    <ul>
+                        <h2>Keto Diet</h2>
+                        <li>Protein: 20-25% of calories</li> 
+                        <li>Carbs: 5-10% of calories</li> 
+                        <li>Fat: 70-75% of calories</li> 
+                    </ul>
+                    <img src="img/steak.jpg" alt="Steak being sliced">
                 </div>
             </div>
         </section>
+
+        <div class="start-btn">
+            <a href="https://macro-calculator.netlify.com/login"><button>Get Started</button></a>
+        </div>
+
+        <footer>
+            <p>Copyright 2019   |   <a href="about.html">About Us</a></p>
+        </footer>
 
     </body>
 
