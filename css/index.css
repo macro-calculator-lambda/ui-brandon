@@ -106,6 +106,8 @@ body header {
 body header .title {
   padding: 30px 0;
   background-color: #444;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 body header .title h1 {
   font-size: 2rem;
@@ -240,7 +242,6 @@ body .info-cards .info .tabs-item {
 body .info-cards .info .tabs-item-selected {
   display: block;
   padding: 15px;
-  margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
   body .info-cards .info .tabs-item-selected {
@@ -249,12 +250,20 @@ body .info-cards .info .tabs-item-selected {
     align-items: center;
   }
 }
+body .info-cards .info .tabs-item-selected h2 {
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  body .info-cards .info .tabs-item-selected h2 {
+    font-size: 1.3rem;
+  }
+}
 body .info-cards .info .tabs-item-selected ul {
   padding: 0 40px;
 }
 @media (min-width: 1200px) {
   body .info-cards .info .tabs-item-selected ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 body .info-cards .info .tabs-item-selected img {
@@ -284,7 +293,9 @@ body .start-btn button {
 }
 @media (min-width: 1200px) {
   body .start-btn button {
+    height: 60px;
     width: 30%;
+    max-width: 300px;
     font-size: 1.1rem;
   }
 }
@@ -294,10 +305,12 @@ body .start-btn button:hover {
 body footer {
   background-color: #444;
   text-align: center;
-  height: 70px;
+  height: 110px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 body footer p {
-  padding-top: 30px;
+  padding-top: 40px;
   color: #ccc;
 }
 body footer p a {
@@ -324,7 +337,7 @@ body footer p a {
     width: 40%;
   }
 }
-.about-cards .about-card img {
+.about-cards .about-card .blank-img {
   width: 80px;
   height: 80px;
   border-radius: 10px;
@@ -337,4 +350,10 @@ body footer p a {
   font-family: 'PT Sans', sans-serif;
   font-weight: 600;
   margin: 5px 0;
+}
+.about-cards .about-card .contact {
+  height: 28px;
+  width: 28px;
+  margin: 20px 0 0 10px;
+  opacity: 0.5;
 }
