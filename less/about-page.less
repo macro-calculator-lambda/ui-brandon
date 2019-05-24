@@ -8,7 +8,7 @@
     .about-card {
         border: 1px solid @darkg;
         border-radius: 5px;
-        padding: 30px;
+        padding: 20px;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
@@ -16,9 +16,16 @@
 
         @media @desktop {
             width: 40%;
+
+            &:hover {
+                animation: grow .75s;
+                background-color: #999; 
+                padding: 17.5px 32px; 
+                margin-bottom: 15px;
+            }
         }
 
-        .blank-img {
+        .profile-img {
             width: 80px;
             height: 80px;
             border-radius: 10px;
@@ -43,10 +50,4 @@
         }        
     }
 
-    .about-card:hover {
-        animation: grow .75s;
-        background-color: #999; 
-        padding: 17.5px 32px; 
-        margin-bottom: 15px;
-    }
 }

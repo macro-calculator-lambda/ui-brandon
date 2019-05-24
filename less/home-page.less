@@ -123,9 +123,16 @@ body {
         border: 1px solid #444;
         border-radius: 5px;
         background-color:  #bbb;
+        box-shadow: 5px -3px 5px #999;
+
+        @media @tablet {
+            max-width: 853px;
+            margin: 40px auto;
+        }
 
         @media @desktop {
-            margin: 40px 80px;
+            max-width: 1100px;
+            box-shadow: 8px -5px 8px #999;
         }
 
         .tabs-links {
@@ -137,22 +144,34 @@ body {
                 background-color: #888;
                 margin: 1px 0 0 1px;
                 border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 5px;
 
                 @media @tablet {
+                    padding: 6px 12px;
+                    margin: 6px 0 0 8px;
+                    box-shadow: 5px -2px 5px #999;
+                }
+
+                @media @desktop {
                     padding: 10px 20px;
                     font-size: 1rem;
-                    margin: 2px 0 0 2px;
                 }
+            }
+
+            &:last-child {
+                margin-right: 1px;
+            }
+
+            .tabs-link:hover {
+                background-color: #999;
             }
 
             .selected-tab {
                 background-color: #bbb;
+                box-shadow: 3px -1px 3px #999;
             }
 
-            h2:hover {
-                background-color: #999;
-            }
         }
 
         .info {
@@ -169,30 +188,41 @@ body {
             }
 
             .tabs-item-selected {
-                display: block;
+                // display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 padding: 15px;
-                height: 357px;
+
+                @media @tablet {
+                    padding: 30px 40px 40px;
+                }
 
                 @media @desktop {
                     display: flex;
+                    flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-                }
-
-                h2 {
-                    margin-bottom: 10px;
-
-                    @media @desktop {
-                        font-size: 1.3rem;
-                    }
+                    height: 357px;
                 }
 
                 ul {
                     padding: 0 40px;
-                    margin-left: 60px;
+                    // margin-left: 60px;
+                    // border: 1px solid red;
+                    width: 180px;
 
                     @media @desktop {
-                        margin-left: 80px;
+                        margin-left: 60px;
+                        width: 220px;
+                    }
+
+                    h2 {
+                        margin-bottom: 10px;
+    
+                        @media @desktop {
+                            font-size: 1.3rem;
+                        }
                     }
 
                     li {
